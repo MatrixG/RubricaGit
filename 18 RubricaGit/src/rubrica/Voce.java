@@ -1,5 +1,7 @@
 package rubrica;
 
+//classe voce
+
 public class Voce {
 	
 	private String nome;
