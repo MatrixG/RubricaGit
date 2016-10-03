@@ -18,8 +18,13 @@ public class mainClass {
 			b = b + b;
 			
 		}
-
-		
+		for (int i = 0; i < 100; i++){
+			
+			a = b *c;
+			c = a + b;
+			b = b + b;
+			
+		}
 	}
 
 }
