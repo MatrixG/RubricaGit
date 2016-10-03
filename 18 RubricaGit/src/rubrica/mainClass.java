@@ -23,7 +23,7 @@ public class mainClass {
 		for (int i = 0; i < 100; i++){
 			
 			a = b *c;
-			c = a + b;
+			c = a + c;
 			b = b + b;
 			
 		}
