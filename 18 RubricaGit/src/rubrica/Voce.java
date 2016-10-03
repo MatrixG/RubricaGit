@@ -1,6 +1,7 @@
 package rubrica;
 
 //classe voce
+//nuova riga
 
 public class Voce {
 	
