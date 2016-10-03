@@ -18,6 +18,8 @@ public class mainClass {
 			b = b + b;
 			
 		}
+		
+		System.out.println("Scritto qualcosa");
 
 		
 	}
