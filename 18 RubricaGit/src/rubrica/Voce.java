@@ -5,6 +5,10 @@ package rubrica;
 //aloa
 //comment
 //italia uno
+
+
+
+
 public class Voce {
 	
 	private String nome;
