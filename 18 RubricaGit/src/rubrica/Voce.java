@@ -4,6 +4,7 @@ package rubrica;
 //nuova riga
 //aloa
 
+
 public class Voce {
 	
 	private String nome;
