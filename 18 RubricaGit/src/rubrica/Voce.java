@@ -3,6 +3,7 @@ package rubrica;
 //classe voce
 //nuova riga
 //aloa
+//comment
 
 
 public class Voce {
