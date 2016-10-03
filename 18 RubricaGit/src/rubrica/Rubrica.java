@@ -13,7 +13,7 @@ public class Rubrica {
 		if (!voci.containsKey(nome + " " + cognome))
 			return voci.put(nome + " " + cognome, new Voce(nome, cognome, telefono));
 		else{
-				throw new VocaGi‡Esiste(nome + " " + cognome + " gi‡ esiste");
+				throw new VocaGi‡Esiste(nome + " " + cognome + " esistente");
 			}
 	}
 }
