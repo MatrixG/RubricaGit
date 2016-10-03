@@ -6,9 +6,11 @@ public class mainClass {
 	
 		do{
 			System.out.print("prova");
-		} while(true) ;
+		} while(false) ;
 
-		int a = 2, b = 3, c = 4;
+		int a = 2; 
+		int b = 3;
+		int c = 4;
 		for (int i = 0; i < 100; i++){
 			
 			a = b *c;
