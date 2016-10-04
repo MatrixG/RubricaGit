@@ -1,14 +1,5 @@
 package rubrica;
 
-//classe voce
-//nuova riga
-//aloa
-//comment
-//italia uno
-
-
-
-
 public class Voce {
 	
 	private String nome;

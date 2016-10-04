@@ -17,7 +17,7 @@ public class Rubrica {
 		this.voci = voci;
 	}
 	
-	//aggiunve voce in rubrica
+	//aggiunge una voce in rubrica
 	public Voce aggiungiVoce(String nome, String cognome, String telefono) throws VocaGi‡Esiste{
 		
 		
@@ -79,11 +79,5 @@ public class Rubrica {
 				throw new VoceNonEsiste(nome + " " + cognome + " non esistente");
 			}
 			return voce;
-		}
-		
-		public void stampa(){
-			//stampa qualcosa...
-		}
-	
-	
+		}	
 }
