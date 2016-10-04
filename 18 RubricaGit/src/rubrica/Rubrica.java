@@ -79,6 +79,10 @@ public class Rubrica {
 			}
 			return voce;
 		}
+		
+		public void stampa(){
+			//stampa qualcosa...
+		}
 	
 	
 }
