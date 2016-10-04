@@ -1,5 +1,6 @@
 package rubrica;
 
+import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -15,5 +16,19 @@ public class Rubrica {
 		else{
 				throw new VocaGi‡Esiste(nome + " " + cognome + " esistente");
 			}
+	}
+	
+	//Prende un nome e cognome e verifica se esiste. 
+	//Nel caso non esiste lancia una eccezione
+	public Voce getVoce(String nome, String cognome){
+		
+		
+		return null;
+	}
+	
+	//Ritorna una lista con tutte le voci in rubrica
+	public List<Voce> getTutteVoci(){
+		
+		return null;
 	}
 }
