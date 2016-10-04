@@ -20,10 +20,13 @@ public class Rubrica {
 	
 	//Prende un nome e cognome e verifica se esiste. 
 	//Nel caso non esiste lancia una eccezione
-	public Voce getVoce(String nome, String cognome){
+	public Voce getVoce(String nome, String cognome) throws VoceNonEsiste{
 		
+		if (!voci.containsKey(nome + " " + cognome))
+			throw new VoceNonEsiste(nome + " " + cognome + "non presente in rubrica!");
+	
 		
-		return null;
+		return voci.get(nome + " " + cognome);
 	}
 	
 	//Ritorna una lista con tutte le voci in rubrica
@@ -33,9 +36,14 @@ public class Rubrica {
 	}
 	
 	//Aggiorna il numero di telefono se valido
-	public Voce aggiornaVoce (String nome, String cognome, String tel){
+	public Voce aggiornaVoce (String nome, String cognome, String tel) throws VoceNonEsiste{
 		
-		return null;
+		if (!voci.containsKey(nome + " " + cognome))
+		throw new VoceNonEsiste(nome + " " + cognome + "non presente in rubrica!");
+
+		voci.get(nome + " " + cognome).setTelefono(tel);;
+		
+		return voci.get(nome + " " + cognome);
 	}
 	
 	//Cancella un contatto e ritorna il contatto cancellato
