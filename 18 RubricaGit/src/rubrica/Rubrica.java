@@ -16,7 +16,8 @@ public class Rubrica {
 	public void setVoci(Map<String, Voce> voci) {
 		this.voci = voci;
 	}
-
+	
+	//aggiunve voce in rubrica
 	public Voce aggiungiVoce(String nome, String cognome, String telefono) throws VocaGi‡Esiste{
 		
 		
