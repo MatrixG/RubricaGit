@@ -1,5 +1,6 @@
 package rubrica;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
@@ -8,6 +9,14 @@ public class Rubrica {
 	
 	private Map<String, Voce> voci = new TreeMap<String, Voce>();
 	
+	public Map<String, Voce> getVoci() {
+		return voci;
+	}
+
+	public void setVoci(Map<String, Voce> voci) {
+		this.voci = voci;
+	}
+
 	public Voce aggiungiVoce(String nome, String cognome, String telefono) throws VocaGi‡Esiste{
 		
 		
@@ -29,11 +38,7 @@ public class Rubrica {
 		return voci.get(nome + " " + cognome);
 	}
 	
-	//Ritorna una lista con tutte le voci in rubrica
-	public List<Voce> getTutteVoci(){
-		
-		return null;
-	}
+	
 	
 	//Aggiorna il numero di telefono se valido
 	public Voce aggiornaVoce (String nome, String cognome, String tel) throws VoceNonEsiste{
@@ -46,9 +51,34 @@ public class Rubrica {
 		return voci.get(nome + " " + cognome);
 	}
 	
-	//Cancella un contatto e ritorna il contatto cancellato
-	public Voce cancellaVoce (String nome, String cognome){
+	//Ritorna una lista con tutte le voci in rubrica
+		public List<Voce> getTutteVoci(){
+			Map<String, Voce> tutteVoci = getVoci();
+			List<Voce> tempVoci = new ArrayList<Voce>(tutteVoci.values());
+			
+			for(Voce v : tempVoci) {
+				System.out.print(v.getNome()+" "+v.getCognome()+" "+v.getTelefono());
+			}
+			
+			return tempVoci;
+		}
 		
-		return null;
-	}
+
+		
+		//Cancella un contatto e ritorna il contatto cancellato
+		public Voce cancellaVoce (String nome, String cognome) throws VoceNonEsiste {
+			
+			String chiave = nome +" "+ cognome;
+			Voce voce = null;
+			
+			if(voci.containsKey(chiave)){
+				voce = voci.get(chiave);
+				voci.remove(chiave);
+			}else {
+				throw new VoceNonEsiste(nome + " " + cognome + " non esistente");
+			}
+			return voce;
+		}
+	
+	
 }
