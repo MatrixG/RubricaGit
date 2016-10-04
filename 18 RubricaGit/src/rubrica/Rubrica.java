@@ -31,4 +31,16 @@ public class Rubrica {
 		
 		return null;
 	}
+	
+	//Aggiorna il numero di telefono se valido
+	public Voce aggiornaVoce (String nome, String cognome, String tel){
+		
+		return null;
+	}
+	
+	//Cancella un contatto e ritorna il contatto cancellato
+	public Voce cancellaVoce (String nome, String cognome){
+		
+		return null;
+	}
 }
