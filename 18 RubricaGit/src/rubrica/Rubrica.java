@@ -58,7 +58,7 @@ public class Rubrica {
 			List<Voce> tempVoci = new ArrayList<Voce>(tutteVoci.values());
 			
 			for(Voce v : tempVoci) {
-				System.out.print(v.getNome()+" "+v.getCognome()+" "+v.getTelefono());
+				System.out.println(v.getNome()+" "+v.getCognome()+" "+v.getTelefono());
 			}
 			
 			return tempVoci;
