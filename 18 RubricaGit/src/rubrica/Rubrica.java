@@ -5,6 +5,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import exceptions.VocaGi‡Esiste;
+import exceptions.VoceNonEsiste;
+
 public class Rubrica {
 	
 	private Map<String, Voce> voci = new TreeMap<String, Voce>();

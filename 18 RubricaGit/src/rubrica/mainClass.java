@@ -1,5 +1,7 @@
 package rubrica;
 
+import exceptions.VocaGi‡Esiste;
+import exceptions.VoceNonEsiste;
 import rubrica.Rubrica;
 
 public class mainClass {
